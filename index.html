@@ -87,7 +87,7 @@
     <section class="hero">
       <div class="eyebrow">MeetScribe Support</div>
       <h1>MeetScribe</h1>
-      <p>MeetScribe is a local-first macOS app for meeting transcription, live captions, translation, and structured meeting notes.</p>
+      <p>MeetScribe is a local-first macOS app for multilingual meeting transcription, bilingual live captions, speaker identification, translation, and structured meeting notes.</p>
 
       <div class="grid">
         <article class="card">
@@ -102,7 +102,8 @@
             <li>Grant microphone permission to capture your own voice.</li>
             <li>Grant Screen Recording permission to capture meeting audio from macOS apps.</li>
             <li>Restart the app after granting Screen Recording permission.</li>
-            <li>Use local providers by default, or configure cloud providers manually in Settings.</li>
+            <li>Complete the first-run tests for speech recognition, translation, and meeting-summary providers.</li>
+            <li>Use local providers by default, or explicitly configure cloud providers in Settings.</li>
           </ul>
         </article>
       </div>
@@ -112,12 +113,15 @@
         <li><strong>Why can’t I hear remote participants in transcripts?</strong> Remote meeting audio is treated as system audio on macOS, so Screen Recording permission and system-audio capture must be enabled.</li>
         <li><strong>Does MeetScribe upload my data by default?</strong> No. MeetScribe is local-first. Cloud or local network providers must be chosen explicitly by the user.</li>
         <li><strong>Why is system translation unavailable?</strong> Some language pairs rely on Apple system translation packages or a user-configured translation provider.</li>
+        <li><strong>Why did a provider test pass but a later request fail?</strong> Check that the model name, API key, service URL, quota, and network access are still valid. MeetScribe shows the provider response without silently replacing it with mock output.</li>
+        <li><strong>Where are exported files saved?</strong> Choose a destination during export or set a default export folder in Settings. Exported transcript and summary filenames include a timestamp and can be revealed in Finder.</li>
+        <li><strong>Can I rename detected speakers?</strong> Yes. Renaming a detected speaker updates every matching segment in the meeting transcript.</li>
       </ul>
 
       <h2>Resources</h2>
       <p><a href="./privacy.html">Privacy Policy</a></p>
 
-      <p class="footer">Last updated: 2026-07-01</p>
+      <p class="footer">MeetScribe 1.1 · Last updated: 2026-07-13</p>
     </section>
   </div>
 </body>
