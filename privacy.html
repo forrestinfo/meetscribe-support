@@ -64,6 +64,7 @@
       <ul>
         <li><strong>Microphone</strong>: to capture the local speaker.</li>
         <li><strong>Screen Recording</strong>: to capture system audio from meeting apps on macOS.</li>
+        <li><strong>Calendar</strong>: to read nearby event titles and suggest a meeting name. MeetScribe does not create, modify, or delete calendar events.</li>
         <li><strong>User-selected files and folders</strong>: to export transcripts and notes when the user chooses an external save location.</li>
       </ul>
 
@@ -72,10 +73,11 @@
         <li>Audio and transcript data are stored locally by default.</li>
         <li>MeetScribe does not upload meeting audio or transcript content by default.</li>
         <li>API keys are stored in the macOS Keychain when the user configures optional third-party providers.</li>
+        <li>Users control where exported records and summaries are saved.</li>
       </ul>
 
       <h2>Optional Third-Party Providers</h2>
-      <p>MeetScribe can connect to user-configured local or cloud providers for speech recognition, translation, or summary generation. When such providers are used, the user is responsible for reviewing and accepting the provider’s own privacy policy and terms.</p>
+      <p>MeetScribe can connect to user-configured local or cloud providers for speech recognition, translation, or summary generation. Content required to perform the requested operation is sent only after the user explicitly configures and selects that provider. Each provider processes data under its own privacy policy and terms.</p>
 
       <h2>Analytics and Tracking</h2>
       <ul>
@@ -84,10 +86,16 @@
         <li>No personal meeting data is collected for analytics by default.</li>
       </ul>
 
+      <h2>Retention and Deletion</h2>
+      <p>MeetScribe does not operate a developer-controlled cloud database for meeting content. Users can delete local meeting folders, transcripts, summaries, and exports at any time through Finder. Credentials for optional providers can be removed from MeetScribe settings and the macOS Keychain.</p>
+
+      <h2>Data Sharing</h2>
+      <p>MeetScribe does not sell personal data. Meeting content is shared only with a provider explicitly configured by the user when needed to fulfill a requested speech-recognition, translation, or summary operation.</p>
+
       <h2>Contact</h2>
       <p>If you have privacy-related questions, contact <a href="mailto:yangshusen@gmail.com">yangshusen@gmail.com</a>.</p>
 
-      <p>Last updated: 2026-07-01</p>
+      <p>Effective and last updated: 2026-07-13</p>
     </section>
   </div>
 </body>
