@@ -100,8 +100,8 @@
           <h2>Quick Help</h2>
           <ul>
             <li>Grant microphone permission to capture your own voice.</li>
-            <li>Grant Screen Recording permission to capture meeting audio from macOS apps.</li>
-            <li>Restart the app after granting Screen Recording permission.</li>
+            <li>Grant System Audio Recording Only permission to capture meeting audio from macOS apps. MeetScribe never records the screen.</li>
+            <li>Choose a visible meeting folder with the standard macOS folder-selection dialog before recording.</li>
             <li>Complete the first-run tests for speech recognition, translation, and meeting-summary providers.</li>
             <li>Use local providers by default, or explicitly configure cloud providers in Settings.</li>
           </ul>
@@ -110,7 +110,7 @@
 
       <h2>Common Questions</h2>
       <ul>
-        <li><strong>Why can’t I hear remote participants in transcripts?</strong> Remote meeting audio is treated as system audio on macOS, so Screen Recording permission and system-audio capture must be enabled.</li>
+        <li><strong>Why can’t I hear remote participants in transcripts?</strong> Remote meeting audio is treated as system audio on macOS, so System Audio Recording Only permission and system-audio capture must be enabled.</li>
         <li><strong>Does MeetScribe upload my data by default?</strong> No. MeetScribe is local-first. Cloud or local network providers must be chosen explicitly by the user.</li>
         <li><strong>Why is system translation unavailable?</strong> Some language pairs rely on Apple system translation packages or a user-configured translation provider.</li>
         <li><strong>Why did a provider test pass but a later request fail?</strong> Check that the model name, API key, service URL, quota, and network access are still valid. MeetScribe shows the provider response without silently replacing it with mock output.</li>
@@ -121,7 +121,7 @@
       <h2>Resources</h2>
       <p><a href="./privacy.html">Privacy Policy</a></p>
 
-      <p class="footer">MeetScribe 1.1 · Last updated: 2026-07-13</p>
+      <p class="footer">MeetScribe 1.1 · Last updated: 2026-07-14</p>
     </section>
   </div>
 </body>
