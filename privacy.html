@@ -63,21 +63,21 @@
       <h2>What MeetScribe Accesses</h2>
       <ul>
         <li><strong>Microphone</strong>: to capture the local speaker.</li>
-        <li><strong>Screen Recording</strong>: to capture system audio from meeting apps on macOS.</li>
+        <li><strong>System Audio Recording Only</strong>: when the user starts a meeting, MeetScribe uses Apple's Core Audio Process Tap to receive audio samples played by meeting apps. MeetScribe has no feature that records the screen and does not collect pixels, screenshots, video, window titles, window contents, or screen metadata.</li>
         <li><strong>Calendar</strong>: to read nearby event titles and suggest a meeting name. MeetScribe does not create, modify, or delete calendar events.</li>
-        <li><strong>User-selected files and folders</strong>: to export transcripts and notes when the user chooses an external save location.</li>
+        <li><strong>User-selected files and folders</strong>: before a recording can start, the user chooses a visible save folder with the standard macOS folder-selection dialog. Meeting audio, transcripts, and notes are never saved as user documents inside MeetScribe's hidden App Sandbox container.</li>
       </ul>
 
       <h2>Default Data Handling</h2>
       <ul>
-        <li>Audio and transcript data are stored locally by default.</li>
+        <li>Audio, transcripts, translations, and notes are stored locally in the user-selected visible folder.</li>
         <li>MeetScribe does not upload meeting audio or transcript content by default.</li>
         <li>API keys are stored in the macOS Keychain when the user configures optional third-party providers.</li>
         <li>Users control where exported records and summaries are saved.</li>
       </ul>
 
       <h2>Optional Third-Party Providers</h2>
-      <p>MeetScribe can connect to user-configured local or cloud providers for speech recognition, translation, or summary generation. Content required to perform the requested operation is sent only after the user explicitly configures and selects that provider. Each provider processes data under its own privacy policy and terms.</p>
+      <p>MeetScribe can connect to user-configured local or cloud providers for speech recognition, translation, or summary generation. Audio samples are sent only to a speech provider the user explicitly configures and selects. Transcript text is sent only to a translation or summary provider the user explicitly configures and selects. Each provider processes data under its own privacy policy and terms. MeetScribe's developer does not receive a copy.</p>
 
       <h2>Analytics and Tracking</h2>
       <ul>
@@ -87,7 +87,7 @@
       </ul>
 
       <h2>Retention and Deletion</h2>
-      <p>MeetScribe does not operate a developer-controlled cloud database for meeting content. Users can delete local meeting folders, transcripts, summaries, and exports at any time through Finder. Credentials for optional providers can be removed from MeetScribe settings and the macOS Keychain.</p>
+      <p>MeetScribe does not operate a developer-controlled cloud database for meeting content. Local audio, transcripts, translations, summaries, and exports remain until the user deletes them from the selected folder through Finder. Credentials for optional providers can be removed from MeetScribe settings and the macOS Keychain. Third-party provider retention is governed by the provider selected by the user.</p>
 
       <h2>Data Sharing</h2>
       <p>MeetScribe does not sell personal data. Meeting content is shared only with a provider explicitly configured by the user when needed to fulfill a requested speech-recognition, translation, or summary operation.</p>
@@ -95,7 +95,7 @@
       <h2>Contact</h2>
       <p>If you have privacy-related questions, contact <a href="mailto:yangshusen@gmail.com">yangshusen@gmail.com</a>.</p>
 
-      <p>Effective and last updated: 2026-07-13</p>
+      <p>Effective and last updated: 2026-07-14</p>
     </section>
   </div>
 </body>
