@@ -65,7 +65,7 @@
         <li><strong>Microphone</strong>: to capture the local speaker.</li>
         <li><strong>System Audio Recording Only</strong>: when the user starts a meeting, MeetScribe uses Apple's Core Audio Process Tap to receive audio samples played by meeting apps. MeetScribe has no feature that records the screen and does not collect pixels, screenshots, video, window titles, window contents, or screen metadata.</li>
         <li><strong>Calendar</strong>: to read nearby event titles and suggest a meeting name. MeetScribe does not create, modify, or delete calendar events.</li>
-        <li><strong>User-selected files and folders</strong>: before a recording can start, the user chooses a visible save folder with the standard macOS folder-selection dialog. Meeting audio, transcripts, and notes are never saved as user documents inside MeetScribe's hidden App Sandbox container.</li>
+        <li><strong>User-selected files and folders</strong>: before a recording can start, the user chooses a visible save folder with the standard macOS folder-selection dialog. The user may also explicitly select a local audio or video file for transcription. MeetScribe copies that file into the visible meeting folder and, for video, decodes only the audio track without reading, rendering, analyzing, or uploading video frames. Meeting media, transcripts, and notes are never saved as user documents inside MeetScribe's hidden App Sandbox container.</li>
       </ul>
 
       <h2>Default Data Handling</h2>
@@ -95,7 +95,7 @@
       <h2>Contact</h2>
       <p>If you have privacy-related questions, contact <a href="mailto:yangshusen@gmail.com">yangshusen@gmail.com</a>.</p>
 
-      <p>Effective and last updated: 2026-07-14</p>
+      <p>Effective and last updated: 2026-08-31</p>
     </section>
   </div>
 </body>
