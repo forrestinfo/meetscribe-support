@@ -87,21 +87,22 @@
   <div class="wrap">
     <main id="main-content" class="card">
       <h1>MeetScribe Privacy Policy</h1>
-      <p>MeetScribe is designed as a local-first macOS app for meeting transcription, translation, captions, and notes.</p>
+      <p>MeetScribe is designed as a local-first macOS and iPhone app for meeting transcription, translation, captions, and notes.</p>
 
       <h2>What MeetScribe Accesses</h2>
       <ul>
-        <li><strong>Microphone</strong>: to capture the local speaker.</li>
-        <li><strong>System Audio Recording Only</strong>: when the user starts a meeting, MeetScribe uses Apple's Core Audio Process Tap to receive audio samples played by meeting apps. MeetScribe has no feature that records the screen and does not collect pixels, screenshots, video, window titles, window contents, or screen metadata.</li>
+        <li><strong>Microphone and speech recognition</strong>: only after the user starts a meeting, to capture and transcribe sound reaching the device microphone.</li>
+        <li><strong>System Audio Recording Only on macOS</strong>: when the user starts a meeting, the macOS app can use Apple's Core Audio Process Tap to receive audio samples played by meeting apps. The iPhone app does not capture audio from other apps. MeetScribe has no feature that records the screen and does not collect pixels, screenshots, video, window titles, window contents, or screen metadata.</li>
         <li><strong>Calendar</strong>: to read nearby event titles and suggest a meeting name. MeetScribe does not create, modify, or delete calendar events.</li>
-        <li><strong>User-selected files and folders</strong>: before a recording can start, the user chooses a visible save folder with the standard macOS folder-selection dialog. The user may also explicitly select a local audio or video file for transcription. MeetScribe copies that file into the visible meeting folder and, for video, decodes only the audio track without reading, rendering, analyzing, or uploading video frames. Meeting media, transcripts, and notes are never saved as user documents inside MeetScribe's hidden App Sandbox container.</li>
+        <li><strong>User-selected files and folders on macOS</strong>: before a recording can start, the user chooses a visible save folder with the standard macOS folder-selection dialog. The user may also explicitly select a local audio or video file for transcription. MeetScribe copies that file into the visible meeting folder and, for video, decodes only the audio track without reading, rendering, analyzing, or uploading video frames.</li>
+        <li><strong>Protected local app storage on iPhone</strong>: meeting audio, transcripts, translations, and notes remain in the app's protected local storage until the user exports or deletes them.</li>
       </ul>
 
       <h2>Default Data Handling</h2>
       <ul>
-        <li>Audio, transcripts, translations, and notes are stored locally in the user-selected visible folder.</li>
+        <li>Audio, transcripts, translations, and notes are stored locally: in the user-selected visible folder on macOS and in protected app storage on iPhone.</li>
         <li>MeetScribe does not upload meeting audio or transcript content by default.</li>
-        <li>API keys are stored in the macOS Keychain when the user configures optional third-party providers.</li>
+        <li>Credentials for optional hosted services are stored in the platform Keychain.</li>
         <li>Users control where exported records and summaries are saved.</li>
       </ul>
 
@@ -116,7 +117,7 @@
       </ul>
 
       <h2>Retention and Deletion</h2>
-      <p>MeetScribe does not operate a developer-controlled cloud database for meeting content. Local audio, transcripts, translations, summaries, and exports remain until the user deletes them from the selected folder through Finder. Credentials for optional providers can be removed from MeetScribe settings and the macOS Keychain. Third-party provider retention is governed by the provider selected by the user.</p>
+      <p>MeetScribe does not currently operate a developer-controlled cloud database for meeting content. On macOS, local records remain until the user deletes them from the selected folder. On iPhone, users can delete completed meetings inside MeetScribe and temporary exports are removed after sharing. Credentials for optional hosted services can be removed from MeetScribe and the platform Keychain. Third-party provider retention is governed by the provider selected by the user.</p>
 
       <h2>Data Sharing</h2>
       <p>MeetScribe does not sell personal data. Meeting content is shared only with a provider explicitly configured by the user when needed to fulfill a requested speech-recognition, translation, or summary operation.</p>
@@ -126,7 +127,7 @@
 
       <footer>
         <p><a href="./">MeetScribe Support</a></p>
-        <p>Effective and last updated: 2026-09-01</p>
+        <p>Effective and last updated: 2026-09-02</p>
       </footer>
     </main>
   </div>
