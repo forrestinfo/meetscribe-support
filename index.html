@@ -112,7 +112,7 @@
     <main id="main-content" class="hero">
       <div class="eyebrow">MeetScribe Support</div>
       <h1>MeetScribe</h1>
-      <p>MeetScribe 1.4 for macOS is a local-first multilingual meeting transcription app with live captions, translation, and structured meeting notes. MeetScribe for iPhone brings the same local-first workflow to microphone-based meetings.</p>
+      <p>MeetScribe 1.5 for macOS is a local-first multilingual meeting transcription app with live captions, translation, and structured meeting notes. MeetScribe for iPhone brings the same local-first workflow to microphone-based meetings.</p>
 
       <div class="grid">
         <article class="card">
@@ -144,10 +144,16 @@
         <li><strong>Can I rename detected speakers?</strong> Yes. Renaming a detected speaker updates every matching segment in the meeting transcript.</li>
       </ul>
 
+      <h2>Whisper v3 setup (macOS 1.5)</h2>
+      <p>Apple on-device speech recognition remains the lightweight default. No Whisper model is required for that option. In Settings or first-run setup, choose Whisper v3, then select large-v3-turbo (about 1.6 GB) or large-v3 (about 3.1 GB). Download only the model you need.</p>
+      <p><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo.bin?download=true">Download Turbo</a> · <a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin?download=true">Download Large</a> · <a href="https://github.com/ggml-org/whisper.cpp/tree/master/examples/server">Install whisper.cpp and its local server</a></p>
+      <p>Save the model in your Downloads folder, follow the engine installation instructions, then copy the matching launch command from MeetScribe into Terminal. The command listens only on 127.0.0.1:8080. Test the connection in MeetScribe before recording. When switching models, stop the previous server and run the new command. The App Store app opens download links; it does not install or launch external executables.</p>
+      <p>Runtime speed and memory use depend on your Mac and model. Large is suited to post-meeting work; choosing it does not guarantee better results for every recording.</p>
+
       <h2>Resources</h2>
       <p><a href="./privacy.html">Privacy Policy</a></p>
 
-      <footer>MeetScribe 1.4 for macOS · MeetScribe 1.0 for iPhone · Last updated: 2026-09-02</footer>
+      <footer>MeetScribe 1.5 for macOS · MeetScribe 1.0 for iPhone · Last updated: 2026-09-05</footer>
     </main>
   </div>
 </body>
